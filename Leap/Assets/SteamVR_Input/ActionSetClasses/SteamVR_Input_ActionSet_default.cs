@@ -105,6 +105,30 @@ namespace Valve.VR
             }
         }
         
+        public virtual SteamVR_Action_Vector2 Touchpad
+        {
+            get
+            {
+                return SteamVR_Actions.default_Touchpad;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean JumpAction
+        {
+            get
+            {
+                return SteamVR_Actions.default_JumpAction;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean Climbing
+        {
+            get
+            {
+                return SteamVR_Actions.default_Climbing;
+            }
+        }
+        
         public virtual SteamVR_Action_Vibration Haptic
         {
             get
