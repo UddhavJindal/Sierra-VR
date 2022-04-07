@@ -12,7 +12,7 @@ public class ClimberHand : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Climbale"))
+        if (other.CompareTag("Climbable"))
         {
             touchCount++;
         }
@@ -20,7 +20,7 @@ public class ClimberHand : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Climbale"))
+        if (other.CompareTag("Climbable"))
         {
             touchCount--;
         }

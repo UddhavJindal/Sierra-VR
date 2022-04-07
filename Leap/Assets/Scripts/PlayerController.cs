@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public SteamVR_Action_Vector2 touchpadInput;
     public SteamVR_Action_Boolean JumpAction;
     public SteamVR_Input_Sources MovementHand;
-    public float jumpHeight;
+    //public float jumpHeight;
     public Transform cameraTransform;
     private CapsuleCollider capsuleCollider;
 
@@ -29,14 +29,14 @@ public class PlayerController : MonoBehaviour
         Rigidbody RBody = GetComponent<Rigidbody>();
         Vector3 velocity = new Vector3(0, 0, 0);
 
-        velocity = movementDir;
+        /*velocity = movementDir;
         if (JumpAction.GetStateDown(MovementHand))
         {
             float jumpSpeed = Mathf.Sqrt(2 * jumpHeight * 9.81f);
             RBody.AddForce(0, jumpSpeed, 0, ForceMode.VelocityChange);
             Debug.Log("Jumping");
-        }
-        RBody.AddForce(velocity.x- RBody.velocity.x, 0, velocity.z - RBody.velocity.z, ForceMode.VelocityChange);
+        }*/
+        //RBody.AddForce(velocity.x- RBody.velocity.x, 0, velocity.z - RBody.velocity.z, ForceMode.VelocityChange);
 
         capsuleCollider.center = cameraTransform.localPosition - 0.5f * distanceFromFloor * Vector3.up; 
     }

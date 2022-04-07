@@ -9,10 +9,15 @@ public class Climbing : MonoBehaviour
     public ClimberHand rightHand;
     public ClimberHand leftHand;
     public Rigidbody body;
+    public Transform player;
 
     [Header("VR Input")]
     public SteamVR_Action_Boolean toggleGripBTN;
-    public ConfigurableJoint climbHandle;
+    public ConfigurableJoint joint;
+
+    [Header("Variables")]
+    public float speed;
+    public float upTime;
 
     private bool isClimbing;
     private ClimberHand activeHand;
@@ -28,7 +33,7 @@ public class Climbing : MonoBehaviour
         updateHand(leftHand);
         if (isClimbing)
         {
-            climbHandle.targetPosition = activeHand.transform.localPosition;
+            joint.targetPosition = activeHand.transform.localPosition;
         }
     }
 
@@ -38,10 +43,11 @@ public class Climbing : MonoBehaviour
         {
             if (toggleGripBTN.GetStateUp(hand.hand))
             {
-                climbHandle.connectedBody = null;
-                isClimbing = false;
-                body.useGravity = true;
-                Debug.Log("Gravity off");
+                float newposY = transform.position.y;
+                //player.transform.position -= (Vector3.down / speed) * Time.deltatime;
+                newposY = Mathf.Lerp(player.transform.position.y, player.transform.position.y - speed, upTime * Time.deltaTime);
+                transform.position = new Vector3(transform.position.x, newposY, transform.position.z);
+                Debug.Log("Down");
             }
         }
         else
@@ -51,13 +57,11 @@ public class Climbing : MonoBehaviour
                 hand.isGrabbing = true;
                 if (hand.touchCount > 0)
                 {
-                    activeHand = hand;
-                    isClimbing = true;
-                    climbHandle.transform.position = hand.transform.position;
-                    body.useGravity = false;
-                    climbHandle.connectedBody = body;
-                    hand.isGrabbing = false;
-                    Debug.Log("Gravity on");
+                    float newposY = transform.position.y;
+                    //player.transform.position += (Vector3.up / speed) * Time.deltatime;
+                    newposY = Mathf.Lerp(player.transform.position.y, player.transform.position.y + speed, upTime * Time.deltaTime);
+                    transform.position = new Vector3(transform.position.x, newposY, transform.position.z);
+                    Debug.Log("Up");
                 }
             }
         }
