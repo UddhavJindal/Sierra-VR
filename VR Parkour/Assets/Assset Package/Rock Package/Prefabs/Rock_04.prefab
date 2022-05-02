@@ -91,9 +91,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4000011339693244}
   - component: {fileID: 205000013595957992}
+  - component: {fileID: 1638463171122279778}
   m_Layer: 0
   m_Name: Rock_04
-  m_TagString: Untagged
+  m_TagString: Climbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,6 +143,19 @@ LODGroup:
     renderers:
     - renderer: {fileID: 23000010331080020}
   m_Enabled: 1
+--- !u!65 &1638463171122279778
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011696945378}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.289154, y: 3.2389672, z: 3.823045}
+  m_Center: {x: -0.16224432, y: 0.048673272, z: -0.06489742}
 --- !u!1 &1000013427078568
 GameObject:
   m_ObjectHideFlags: 0
