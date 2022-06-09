@@ -2,8 +2,8 @@
 Sierra VR is prototype room-scale climbing experience consisting of a short one level adventure through different obstacles.
 
 ## Description
-The objective of the game is simple: climb the landscape by 'grabbing' the blocks while moving your arms and pressing the trigger button on the controllers in each hand. 'Sierra' bringsalive the excitement and thrill of wall climbing in incredible virtual reality. Players will scale new heights.
-This game is built on UnityEngine.
+The objective of the game is simple: climb the landscape by 'grabbing' the blocks while moving your arms and pressing the trigger button on the controllers in each hand. 'Sierra' brings alive the excitement and thrill of wall climbing in incredible virtual reality. Players will scale new heights.
+This game is built on UnityEngine, version 2020.3.32f1.
 
 ## Screenshots![(13) Sierra(VR climbing game) - YouTube - Google Chrome 09-06-2022 21_03_21](https://user-images.githubusercontent.com/33927636/172886885-97089e29-9258-4d08-bcc4-218b1d3e441a.png)
 ![(13) Sierra(VR climbing game) - YouTube - Google Chrome 09-06-2022 21_03_01](https://user-images.githubusercontent.com/33927636/172886874-4be6081e-1d3a-4c2e-b298-78dd78f9bba5.png)
