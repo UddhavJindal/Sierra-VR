@@ -1,4 +1,4 @@
-# Game Title
+# Sierra VR
 Sierra VR is prototype room-scale climbing experience consisting of a short one level adventure through different obstacles.
 
 ## Description
