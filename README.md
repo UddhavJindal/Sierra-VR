@@ -14,8 +14,8 @@ https://user-images.githubusercontent.com/33927636/172885845-e1202139-2e43-4e10-
 
 ## Contibutors
 1. [Uddhav Jindal](https://github.com/UddhavJindal)
-2. [Vaibhav Sharma](https://github.com/vai3hav139)
-3. [Ankur Goel](https://github.com/AnkurG0604)
+2. [Ankur Goel](https://github.com/AnkurG0604)
+3. [Vaibhav Sharma](https://github.com/vai3hav139)
 
 ## References
 - [SteamVR-UnityPlugin](https://github.com/ValveSoftware/steamvr_unity_plugin)
